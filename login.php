@@ -23,30 +23,28 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 <head>
     <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <h1>Login</h1>
     <p><?php echo (!empty($err) ? $err  : "Silahkan login ke akun anda!"); ?></p>
-    <table>
-        <form method="POST">
-            <tr>
-                <td>Username</td>
-                <td>:</td>
-                <td><input type="text" name="username" required></td>
-            </tr>
-            <tr>
-                <td>Password</td>
-                <td>:</td>
-                <td><input type="password" name="password" required></td>
-            </tr>
-            <tr>
-                <td><input type="submit" value="Login"></td>
-                <td></td>
-                <td><input type="submit" name="register" value="Register"></td>
-            </tr>
-        </form>
-    </table>
+    <form method="POST">
+    <div>
+        <label for="username">Username: </label>
+        <input type="text" name="username" id="username" required>
+    </div>
+
+    <div>
+        <label for="password">Password:&nbsp;</label>
+        <input type="password" name="password" id="password" required>
+    </div>
+
+    <div>
+        <input type="submit" value="Login">
+        <input type="submit" name="register" value="Register">
+    </div>
+</form>
 </body>
 
 </html>

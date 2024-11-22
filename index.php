@@ -68,6 +68,7 @@ function generateTable($result, $action)
 
 <head>
     <title>Home Page</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>

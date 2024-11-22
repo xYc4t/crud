@@ -43,6 +43,7 @@ $result_kelas = mysqli_query($conn, "SELECT * FROM kelas");
 
 <head>
     <title>Update Siswa</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
